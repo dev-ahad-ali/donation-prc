@@ -6,6 +6,7 @@ Website : [Live-Link](https://donation-prc.netlify.app)
 
 -   React
 -   React Router Dom
+-   React Helmet Async
 -   Tailwind CSS
 -   Material Tailwind
 -   Recharts

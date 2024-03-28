@@ -11,6 +11,7 @@ import {
 import { ToastContainer, Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { saveToLocalStorage } from '../../utils/localStorage';
+import { Helmet } from 'react-helmet-async';
 
 const DonationDetails = () => {
     const { id } = useParams();
@@ -31,6 +32,9 @@ const DonationDetails = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Donation Prc | Donation Details</title>
+            </Helmet>
             <Card className='w-full shadow-none lg:px-20 mt-12 overflow-hidden'>
                 <CardHeader
                     floated={false}

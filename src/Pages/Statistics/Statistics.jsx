@@ -8,6 +8,7 @@ import {
 } from 'recharts';
 import useDonationData from '../../Hooks/useDonationData';
 import useLocalData from '../../Hooks/useLocalData';
+import { Helmet } from 'react-helmet-async';
 
 const Statistics = () => {
     const { data: donationData } = useDonationData();
@@ -50,6 +51,9 @@ const Statistics = () => {
     };
     return (
         <div className='w-full h-[80vh]'>
+            <Helmet>
+                <title>Donation Prc | Statistics</title>
+            </Helmet>
             <ResponsiveContainer>
                 <PieChart>
                     <Pie

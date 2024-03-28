@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Banner from '../../components/Banner/Banner';
 import CategoryList from '../../components/CategoryList/CategoryList';
 import useDonationData from '../../Hooks/useDonationData';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
     const [value, setValue] = useState('');
@@ -22,6 +23,9 @@ const Home = () => {
     };
     return (
         <div>
+            <Helmet>
+                <title>Donation Prc | Home</title>
+            </Helmet>
             <Banner
                 setValue={setValue}
                 handleSearch={handleSearch}
